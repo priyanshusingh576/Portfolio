@@ -1,6 +1,7 @@
 :root {
     --bg-primary: #fafafab5; 
     --bg-secondary: #FFFFFF; 
+    --bg-beige: #F9F6F0; 
     --text-main: #2C2A28; 
     --text-muted: #66615C; 
     --accent: #A67B5B; 
@@ -13,6 +14,11 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -134,9 +140,8 @@ section {
     transform: translateY(-2px);
 }
 
-/* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 80px;
@@ -364,6 +369,7 @@ section {
     border: 1px solid var(--border-color);
     color: var(--text-main);
     font-family: 'Inter', sans-serif;
+    font-size: 16px; 
     border-radius: 4px;
     transition: all 0.3s ease;
 }
@@ -431,9 +437,13 @@ footer p {
     }
     
     .hero h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem; 
     }
     
+    .hero .role {
+        font-size: 1.5rem; 
+    }
+
     .hero-actions {
         flex-direction: column;
     }
